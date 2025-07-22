@@ -1,0 +1,4 @@
+Material is incompatible with mesh primitive: Texture binding '/materials/47/pbrMetallicRoughness/baseColorTexture' needs 'TEXCOORD_0' attribute.	/meshes/305/primitives/0/material
+MESH_PRIMITIVE_TOO_FEW_TEXCOORDS	Material is incompatible with mesh primitive: Texture binding '/materials/47/pbrMetallicRoughness/metallicRoughnessTexture' needs 'TEXCOORD_0' attribute.	/meshes/305/primitives/0/material
+MESH_PRIMITIVE_TOO_FEW_TEXCOORDS	Material is incompatible with mesh primitive: Texture binding '/materials/47/normalTexture' needs 'TEXCOORD_0' attribute.	/meshes/305/primitives/0/material
+MESH_PRIMITIVE_TOO_FEW_TEXCOORDS	Material is incompatible with mesh primitive: Texture binding '/materials/48/pbrMetallicRoughness/baseColorTexture' needs 'TEXCOORD_0' attribute.

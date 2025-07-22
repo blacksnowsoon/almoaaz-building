@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>عمارة المعز</title>
+    <link href="libs/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo&display=swap">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <h1>عمارة المعز</h1>
+        <!-- hero -->
+        <section class="container">
+            <h2></h2>
+            <model-viewer 
+                class="full-viewer"
+                src="https://firebasestorage.googleapis.com/v0/b/gk-crud.appspot.com/o/ali%2FBuilding.glb?alt=media&token=4270498e-223f-4b43-8626-abae24852e82" 
+                ar ar-modes="webxr scene-viewer quick-look" 
+                camera-controls 
+                tone-mapping="neutral" 
+                shadow-intensity="2" 
+                shadow-softness="1" 
+                environment-image="assets/hdr/puresky_1k.hdr" 
+                exposure="1.5" 
+                skybox-image="assets/hdr/puresky_1k.hdr"></model-viewer>
+            <div>
+                <h4 class=""><span> GLB </span>هذا نموذج ثلاثي الأبعاد لعمارة المعز، تم تصميمه باستخدام تقنية</h4>
+                <h4 class="">Created By <a rel="noopener noreferrer" href="https://gh-portfolio-liard.vercel.app/" target="_blank" >Gharieb Khalifa</a></s>
+            </div>
+        </section> 
+        <!-- cards -->
+        <section class="container">
+            <h2>النماذج</h2>
+            <div class="card-section">
+                
+                <div class="model-card">
+                    <div class="model-view">
+                        <div class="model-details">
+                            <h3>النموذج: (أ)</h3>
+                            <p>الوجهه الامامية</p>
+                            <p class="text-center">المساحة الكلية: <span>155</span> متر مربع</p>
+                            <ul class="">
+                                <li >عدد 2 حمام</li>
+                                <li > مطبخ</li>
+                                <li>عدد 3 غرفة نوم</li>
+                                <li >صالة</li>
+                            </ul>
+                        </div>
+                        <div class="model-container">
+                            <model-viewer
+                                class="card-model-viewer"
+                                src="assets/Model-A.glb"
+                                ar
+                                camera-controls 
+                                tone-mapping="neutral" 
+                                shadow-intensity="2" 
+                                shadow-softness="1" 
+                                environment-image="assets/hdr/puresky_1k.hdr" 
+                                exposure="1.5" 
+                                touch-action="pan-y"
+                                disable-pan
+                                max-camera-orbit="auto 90deg auto"
+                                skybox-image="assets/hdr/puresky_1k.hdr"></model-viewer>
+                        </div>
+                        
+                    </div>
+                    <div class="model-image">
+                        <img src="models/model-a-z.png" class="model-image" alt="Model-A-Z"/>
+                    </div>
+                </div>
+
+                <div class="model-card">
+                    <div class="model-image">
+                        <img src="models/model-b-m.png" class="model-image" alt="Model-B-Z" />
+                    </div>
+                    <div class="model-view">
+                        <div class="model-details">
+                            <h3>النموذج: (ب)</h3>
+                            <p>الوجهه الخلفية</p>
+                            <p>المساحة الكلية: <span>160</span> متر مربع</p>
+                            <ul class="">
+                                <li>عدد 2 حمام</li>
+                                <li> مطبخ</li>
+                                <li>عدد 3 غرفة نوم</li>
+                                <li>صالة</li>
+                            </ul>
+                        </div>
+                        <div class="model-container">
+                            <model-viewer
+                                skybox-image="assets/hdr/dusk_puresky_1k.hdr"
+                                class="card-model-viewer"
+                                src="assets/Model-B.glb"
+                                alt="Model-A-First-Floor"
+                                camera-controls
+                                shadow-intensity="1.5"
+                                disable-pan
+                                max-camera-orbit="auto 90deg auto"
+                            ></model-viewer>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section> 
+        <!-- end cards -->
+        <!-- map -->
+        <section class="container">
+            <h2>الخريطة</h2>
+            <div class="container">
+                <img src="models/map.png" alt="map" class="map" />
+            </div>
+        </section>
+        <!--  -->
+        <!-- slider -->
+        <section class="container">
+            <h2>جاليري</h2>
+            <div class="slider-container" id="slider-container">
+                
+            </div>
+
+            <div class="slider-dots" id="slider-dots">
+                
+            </div>
+        </section>
+
+    </div>
+    <script src="libs/jquery-3.7.1.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
