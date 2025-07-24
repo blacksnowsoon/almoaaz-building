@@ -3,7 +3,7 @@
 $(document).ready(function() {
      // Preload the GLB file
     
-    fetch('assets/building-7F-G5.glb')
+    fetch('assets/building-7F-G7.glb')
         .then(response => {
             if (!response.ok) throw new Error('Failed to load model');
             
