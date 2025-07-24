@@ -4,19 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>عمارة المعز</title>
-    <link href="libs/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-
+    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cairo&display=swap">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- Model Viewer -->
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
     <main class="container">
         <h1>عمارة المعز</h1>
         <!-- hero -->
-        <section class="container">
+        <section class="container" id="main-model-section">
             <h2></h2>
-            <model-viewer 
+            
+            <!-- <model-viewer 
                 class="full-viewer"
                 src="assets/building-7F-G5.glb" 
                 ar ar-modes="webxr scene-viewer quick-look" 
@@ -28,10 +31,16 @@
                 exposure="1.5" 
                 disable-pan
                 max-camera-orbit="auto 90deg auto"
-                skybox-image="assets/hdr/puresky_1k.hdr"></model-viewer>
+                skybox-image="assets/hdr/puresky_1k.hdr">
+            </model-viewer> -->
             <div>
-                <h4 class=""><span> GLB </span>هذا نموذج ثلاثي الأبعاد لعمارة المعز، تم تصميمه باستخدام تقنية</h4>
-                <h4 class="">Created By <a rel="noopener noreferrer" href="https://gh-portfolio-liard.vercel.app/" target="_blank" >Gharieb Khalifa</a></s>
+                <h5 class=""><span> GLB </span>هذا نموذج ثلاثي الأبعاد لعمارة المعز، تم تصميمه باستخدام تقنية</h5>
+                <h5 class="">Created By <a rel="noopener noreferrer" href="https://gh-portfolio-liard.vercel.app/" target="_blank" >Gharieb Khalifa</a></s>
+            </div>
+            <div id="main-spinner" class="d-flex flex-column justify-content-center align-items-center">
+                <div class="spinner-border text-primary" >
+                </div>
+                <span class="spinner-text">...جاري تحميل النموذج</span>
             </div>
         </section> 
         <!-- cards -->
@@ -131,7 +140,8 @@
 
     </main>
     <script src="libs/jquery-3.7.1.js"></script>
-    <script src="libs/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.6/dist/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.2.1/dist/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 </html>
