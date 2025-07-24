@@ -11,15 +11,14 @@
     <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
 </head>
 <body>
-
-    <div class="container">
+    <main class="container">
         <h1>عمارة المعز</h1>
         <!-- hero -->
         <section class="container">
             <h2></h2>
             <model-viewer 
                 class="full-viewer"
-                src="https://firebasestorage.googleapis.com/v0/b/gk-crud.appspot.com/o/ali%2FBuilding.glb?alt=media&token=4270498e-223f-4b43-8626-abae24852e82" 
+                src="assets/building-7F-G5.glb" 
                 ar ar-modes="webxr scene-viewer quick-look" 
                 camera-controls 
                 tone-mapping="neutral" 
@@ -27,6 +26,8 @@
                 shadow-softness="1" 
                 environment-image="assets/hdr/puresky_1k.hdr" 
                 exposure="1.5" 
+                disable-pan
+                max-camera-orbit="auto 90deg auto"
                 skybox-image="assets/hdr/puresky_1k.hdr"></model-viewer>
             <div>
                 <h4 class=""><span> GLB </span>هذا نموذج ثلاثي الأبعاد لعمارة المعز، تم تصميمه باستخدام تقنية</h4>
@@ -45,10 +46,10 @@
                             <p>الوجهه الامامية</p>
                             <p class="text-center">المساحة الكلية: <span>155</span> متر مربع</p>
                             <ul class="">
-                                <li >عدد 2 حمام</li>
-                                <li > مطبخ</li>
-                                <li>عدد 3 غرفة نوم</li>
                                 <li >صالة</li>
+                                <li>عدد 3 غرفة نوم</li>
+                                <li> مطبخ</li>
+                                <li>عدد 2 حمام</li>
                             </ul>
                         </div>
                         <div class="model-container">
@@ -84,10 +85,10 @@
                             <p>الوجهه الخلفية</p>
                             <p>المساحة الكلية: <span>160</span> متر مربع</p>
                             <ul class="">
-                                <li>عدد 2 حمام</li>
-                                <li> مطبخ</li>
-                                <li>عدد 3 غرفة نوم</li>
                                 <li>صالة</li>
+                                <li>عدد 3 غرفة نوم</li>
+                                <li> مطبخ</li>
+                                <li>عدد 2 حمام</li>
                             </ul>
                         </div>
                         <div class="model-container">
@@ -128,7 +129,7 @@
             </div>
         </section>
 
-    </div>
+    </main>
     <script src="libs/jquery-3.7.1.js"></script>
     <script src="libs/bootstrap.min.js"></script>
     <script src="script.js"></script>
