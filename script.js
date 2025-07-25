@@ -3,7 +3,7 @@
 $(document).ready(function() {
      // Preload the GLB file
     
-    fetch('assets/building-7F-G7.glb')
+    fetch('assets/building-7F-G8.glb')
         .then(response => {
             if (!response.ok) throw new Error('Failed to load model');
             
@@ -35,7 +35,7 @@ $(document).ready(function() {
                 $('.spinner-text').hide();
             });
             // Append to the section
-            $('#main-model-section').append(modelViewer);
+            // $('#main-model-section').append(modelViewer);
 
         })
         .catch(err => {
