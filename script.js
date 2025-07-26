@@ -1,49 +1,6 @@
 
 
 $(document).ready(function() {
-     // Preload the GLB file
-    
-    // fetch('assets/building-7F-G8.glb')
-    //     .then(response => {
-    //         if (!response.ok) throw new Error('Failed to load model');
-            
-    //         return response.blob();
-    //     })
-    //     .then(blob => {
-    //         // Create a blob URL for the model
-    //         const url = URL.createObjectURL(blob);
-
-    //         // Create the model-viewer element
-    //         const modelViewer = document.createElement('model-viewer');
-    //         modelViewer.className = 'full-viewer';
-    //         modelViewer.setAttribute('src', url);
-    //         modelViewer.setAttribute('ar', '');
-    //         modelViewer.setAttribute('ar-modes', 'webxr scene-viewer quick-look');
-    //         modelViewer.setAttribute('camera-controls', '');
-    //         modelViewer.setAttribute('tone-mapping', 'neutral');
-    //         modelViewer.setAttribute('shadow-intensity', '2');
-    //         modelViewer.setAttribute('shadow-softness', '1');
-    //         modelViewer.setAttribute('environment-image', 'assets/hdr/puresky_1k.hdr');
-    //         modelViewer.setAttribute('exposure', '1.5');
-    //         modelViewer.setAttribute('disable-pan', '');
-    //         modelViewer.setAttribute('max-camera-orbit', 'auto 90deg auto');
-    //         modelViewer.setAttribute('skybox-image', 'assets/hdr/puresky_1k.hdr');
-    //         modelViewer.addEventListener('load', () => {
-    //             // Hide the spinner when the model is loaded
-    //             $('#main-spinner').hide(); // You can also hide the spinner using jQuery
-    //             $('.spinner-border').hide();
-    //             $('.spinner-text').hide();
-    //         });
-    //         // Append to the section
-    //         // $('#main-model-section').append(modelViewer);
-
-    //     })
-    //     .catch(err => {
-    //         document.getElementById('main-spinner').textContent = 'فشل تحميل النموذج';
-    //     });
-    
-    
-    
         // --- JavaScript for the Image Slider ---
     let slideIndex = 1;
     for (let i = 0; i < 8; i++) {
