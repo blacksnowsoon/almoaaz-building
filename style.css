@@ -191,8 +191,47 @@
         }
 #map-container {
     width: 100%;
-    height: 600px;
     border-radius: 8px;
     overflow: hidden;
     
 }
+
+/* Grid */
+
+.grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 600px; /* Set to your image width */
+        height: 600px; /* Set to your image height */
+        margin: 40px auto;
+        border: 2px solid #1a0d0d;
+        border-collapse: collapse;
+    }
+
+    .cell {
+        background-image: url('assets/poster.webp');
+        background-size: 600px 600px; /* same as container size */
+        background-repeat: no-repeat;
+        border: 1px solid #1a0d0d; /* Optional: border for each cell */
+        margin: 1rem;
+    }
+
+    /* Position each cell using background-position */
+    .cell:nth-child(1) { background-position: 0% 0%; }
+    .cell:nth-child(2) { background-position: 50% 0%; }
+    .cell:nth-child(3) { background-position: 100% 0%; }
+    .cell:nth-child(4) { background-position: 0% 50%; }
+    .cell:nth-child(5) { background-position: 50% 50%; }
+    .cell:nth-child(6) { background-position: 100% 50%; }
+    .cell:nth-child(7) { background-position: 0% 100%; }
+    .cell:nth-child(8) { background-position: 50% 100%; }
+    .cell:nth-child(9) { background-position: 100% 100%; }
+    
+    
+    @keyframes checks {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+        
+    }
